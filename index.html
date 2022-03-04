@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="logo"> <span>Lux</span>Cars</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#featured">Destaques</a>
+            <a href="#vehicles">Veículos</a>
+            <a href="#services">Serviços</a>
+            <a href="#contact">Contato</a>
+
+        </nav>
+
+        <div id="login-btn">
+            <a href="#" class="log-in">Entre</a>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+    <div class="login-form-container">
+
+        <span class="fas fa-times" id="close-login-form"></span>
+        <form method="POST" action="">
+            <h3>Usuário</h3>
+
+            <input type="user" name="username" placeholder="Email" class="box">
+
+            <input type="password" name="password" placeholder="Senha" class="box">
+
+            <p>esqueci minha senha <a href="#">clique aqui</a></p>
+
+            <input type="submit" value="login" class="btn">
+
+            <p>ou faça login com</p>
+
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+
+            <p>não tenho uma conta <a href="#">crie uma</a></p>
+        </form>
+    </div>
+
+
+    <section class="home" id="home">
+        <h1 class="homep1">Compre seu carro</h1>
+        <img class="homep1" src="image/home-img.png">
+        <a href="#" class="btn homep1">Veja os carros</a>
+    </section>
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-wrench"></i>
+            <div class="content">
+                <h3>300+</h3>
+                <p>Lojas pelo Brasil todo</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1100+</h3>
+                <p>Carros vendidos</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-user"></i>
+            <div class="content">
+                <h3>1100+</h3>
+                <p>Clientes satisfeitos</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>50+</h3>
+                <p>Carros novos todos os anos</p>
+            </div>
+        </div>
+    </section>
+    <section class="vehicles" id="featured">
+
+        <h1 class="heading"> Marca do Momento </h1>
+
+        <div class="swiper vehicles-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-1.png" alt="">
+                    <div class="content">
+                        <h3>Porsche 911</h3>
+                        <div class="price"> <span>preço : </span> $600,400 </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> petrólio
+                            <span class="fas fa-circle"></span> 183 km/h
+
+                        </p>
+
+                        <a href="#" class="btn" id="compra">Compre</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-2.png" alt="">
+                    <div class="content">
+                        <h3>Porsche Panamera</h3>
+                        <div class="price"> <span>preço : </span> R$376,000 </div>
+                        <p>
+                            <span></span> 2016
+                            <span class="fas fa-circle"></span> Automático
+                            <span class="fas fa-circle"></span> Elétrico
+                            <span class="fas fa-circle"></span> 210 km/h
+                        </p>
+
+
+                        <a href="#" class="btn" id="compra" onclick="active()">Compre</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-3.png" alt="">
+                    <div class="content">
+                        <h3>Porsche Panamera</h3>
+                        <div class="price"> <span>preço : </span> R$562,000 </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> petrólio
+                            <span class="fas fa-circle"></span> 220 km/h
+                        </p>
+                        <a href="#" class="btn" id="compra" onclick="active()">Compre</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-4.png" alt="">
+                    <div class="content">
+                        <h3> Porsche Cayman</h3>
+                        <div class="price"> <span>preço : </span> $409,000 </div>
+                        <p>
+
+                            <</span> 2012
+                                <span class="fas fa-circle"></span> automático
+                                <span class="fas fa-circle"></span> Diesel
+                                <span class="fas fa-circle"></span> 281 km/h
+                        </p>
+                        <a href="#" class="btn" id="compra" onclick="active()">Compre</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-5.png" alt="">
+                    <div class="content">
+                        <h3>PORSCHE 718
+                        </h3>
+                        <div class="price"> <span>preço : </span> R$681,300 </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> Elétrico
+                            <span class="fas fa-circle"></span> 302 km/h
+                        </p>
+                        <a href="#" class="btn" id="compra" onclick="active()">Compre</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-6.png" alt="">
+                    <div class="content">
+                        <h3>Porsche Cayenne</h3>
+                        <div class="price"> <span>preço : </span> R$159,000 </div>
+                        <p>
+
+                            <span></span> 2012
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> elétrico
+                            <span class="fas fa-circle"></span> 180 km/h
+                        </p>
+                        <a href="#" class="btn" id="compra" onclick="active()">Compre</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
